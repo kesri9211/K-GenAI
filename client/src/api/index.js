@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API=axios.create({
-    baseURL: "http://localhost:8000/api/",
+    baseURL: "https://k-genai.onrender.com/api",
 });
 
 export const GetPosts = async () => await API.get("/post/");
